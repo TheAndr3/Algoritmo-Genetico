@@ -2,7 +2,7 @@
 
 Este projeto consiste na implementação de um **Algoritmo Genético (AG) desenvolvido completamente do zero** (sem o uso de bibliotecas de terceiros para a lógica evolucionária), com o objetivo de maximizar a função matemática:
 
-$$f(x) = x \cdot \operatorname{sen}(10\pi x) + 1$$
+$$f(x) = x \cdot \sin(10\pi x) + 1$$
 
 no intervalo $x \in [-1, 2]$.
 

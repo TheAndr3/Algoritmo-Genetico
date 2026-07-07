@@ -1,7 +1,7 @@
 # Glossário de Domínio
 
 - **Indivíduo / Cromossomo:** Representa uma solução candidata para o problema. É codificado como uma sequência de **22 bits**.
-- **Fitness / Avaliação:** Valor da função objetivo para o cromossomo. Definido como $f(x) = x \cdot \operatorname{sen}(10\pi x) + 1$. Pode assumir valores negativos.
+- **Fitness / Avaliação:** Valor da função objetivo para o cromossomo. Definido como $f(x) = x \cdot \sin(10\pi x) + 1$. Pode assumir valores negativos.
 - **Fitness Deslocado (Shifted Fitness):** Como a roleta não suporta números negativos, o fitness deslocado é usado apenas durante o sorteio. Soma-se o módulo do menor fitness da geração a todos os indivíduos para que o mínimo seja $\ge 0$.
 - **Decodificação:** Processo matemático de conversão do valor binário (cromossomo) para o seu equivalente real no intervalo de $[-1, 2]$.
 - **População:** Conjunto de Indivíduos (fixado em 100) que evoluem a cada geração.
