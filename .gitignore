@@ -2,3 +2,7 @@
 .pycache
 skills-lock.json
 /docs
+__pycache__
+lib
+scripts
+share
