@@ -1,23 +1,12 @@
-import os
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from ag import AlgoritmoGenetico
 
-# Caminho do diretório de artefatos para salvar as imagens caso exista
-ARTIFACT_DIR = r"C:\Users\Usuário\.gemini\antigravity\brain\153d5e71-8a90-4e7b-985e-0f81a3b4a3d3"
-
 def salvar_grafico(fig, nome_arquivo):
-    """Salva a figura no diretório de trabalho e no diretório de artefatos, se ele existir."""
-    # Salva no diretório atual
+    """Salva a figura no diretório de trabalho atual."""
     fig.savefig(nome_arquivo, dpi=300, bbox_inches='tight')
     print(f"Gráfico salvo no diretório atual como: {nome_arquivo}")
-    
-    # Salva no diretório de artefatos
-    if os.path.exists(ARTIFACT_DIR):
-        caminho_artefato = os.path.join(ARTIFACT_DIR, nome_arquivo)
-        fig.savefig(caminho_artefato, dpi=300, bbox_inches='tight')
-        print(f"Gráfico copiado para os artefatos em: {caminho_artefato}")
 
 def executar_simulacao_1():
     print("==================================================")
